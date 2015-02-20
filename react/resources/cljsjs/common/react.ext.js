@@ -1506,6 +1506,39 @@ React.DOM.video = function(props, children) {};
 React.DOM.wbr = function(props, children) {};
 
 /**
+ * @param {Object=} props
+ * @param {...React.ChildrenArgument} children
+ * @return {React.ReactComponent}
+ * @protected
+ */
+React.DOM.defs = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...string|React.ReactComponent|Array.<React.ReactComponent>|boolean} children
+ * @return {React.ReactComponent}
+ * @protected
+ */
+React.DOM.foreignObject = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...string|React.ReactComponent|Array.<React.ReactComponent>|boolean} children
+ * @return {React.ReactComponent}
+ * @protected
+ */
+React.DOM.clipPath = function(props, children) {};
+
+/**
+ * @param {Object=} props
+ * @param {...string|React.ReactComponent|Array.<React.ReactComponent>|boolean} children
+ * @return {React.ReactComponent}
+ * @protected
+ */
+React.DOM.mask = function(props, children) {};
+
+
+/**
  * @typedef {function(boolean, boolean, Object, string, string, string): boolean} React.ChainableTypeChecker
  */
 React.ChainableTypeChecker;
