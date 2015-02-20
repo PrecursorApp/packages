@@ -10,7 +10,7 @@
 (bootlaces! +version+)
 
 (task-options!
- pom  {:project     'cljsjs/react
+ pom  {:project     'precursorapp/react
        :version     +version+
        :description "React.js packaged up with Google Closure externs"
        :url         "http://facebook.github.io/react/"
@@ -18,9 +18,9 @@
        :license     {"BSD" "http://opensource.org/licenses/BSD-3-Clause"}})
 
 (deftask download-react []
-  (download :url "https://github.com/facebook/react/releases/download/v0.12.2/react-0.12.2.zip"
-              :checksum "6a242238790b21729a88c26145eca6b9"
-              :unzip true))
+  (download :url "https://github.com/PrecursorApp/react/releases/download/v0.12.2-new-tags/react-0.12.2-new-tags.zip"
+            :checksum "6aef36dd47019e1e21240b3333a19e4d"
+            :unzip true))
 
 (deftask package []
   (comp
@@ -31,7 +31,7 @@
     (deps-cljs :name "cljsjs.react")))
 
 (deftask package-with-addons []
-  (task-options! pom {:project 'cljsjs/react-with-addons
+  (task-options! pom {:project 'precursorapp/react-with-addons
                       :description "React.js with addons packaged up with Google Closure externs"})
   (comp
     (download-react)
