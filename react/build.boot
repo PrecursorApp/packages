@@ -25,7 +25,7 @@
 (deftask package []
   (comp
     (download-react)
-    (sift :move {#"^react-.*/build/react.js" "cljsjs/production/react.inc.js"
+    (sift :move {#"^react-.*/build/react.js" "cljsjs/development/react.inc.js"
                  #"^react-.*/build/react.min.js" "cljsjs/production/react.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react")))
@@ -35,7 +35,7 @@
                       :description "React.js with addons packaged up with Google Closure externs"})
   (comp
     (download-react)
-    (sift :move {#"^react-.*/build/react-with-addons.js" "cljsjs/production/react-with-addons.inc.js"
+    (sift :move {#"^react-.*/build/react-with-addons.js" "cljsjs/development/react-with-addons.inc.js"
                  #"^react-.*/build/react-with-addons.min.js" "cljsjs/production/react-with-addons.min.inc.js"})
     (sift :include #{#"^cljsjs"})
     (deps-cljs :name "cljsjs.react")))
