@@ -6,7 +6,7 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.12.2-7-1-new-tags")
+(def +version+ "0.12.2-7-2-new-tags")
 (bootlaces! +version+)
 
 (task-options!
@@ -19,7 +19,7 @@
 
 (deftask download-react []
   (download :url "https://github.com/PrecursorApp/react/releases/download/v0.12.2-new-tags/react-0.12.2-new-tags.zip"
-            :checksum "cd53c7c3d72752f6f87a3886efe55ccb"
+            :checksum "3da60135537fcc5bebf615fe2f787797"
             :unzip true))
 
 (deftask package []
