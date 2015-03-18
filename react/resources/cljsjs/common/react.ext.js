@@ -1537,6 +1537,13 @@ React.DOM.clipPath = function(props, children) {};
  */
 React.DOM.mask = function(props, children) {};
 
+/**
+ * @param {Object=} props
+ * @param {...string|React.ReactComponent|Array.<React.ReactComponent>|boolean} children
+ * @return {React.ReactComponent}
+ * @protected
+ */
+React.DOM.marker = function(props, children) {};
 
 /**
  * @typedef {function(boolean, boolean, Object, string, string, string): boolean} React.ChainableTypeChecker

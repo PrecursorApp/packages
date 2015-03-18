@@ -6,11 +6,11 @@
 (require '[adzerk.bootlaces :refer :all]
          '[cljsjs.boot-cljsjs.packaging :refer :all])
 
-(def +version+ "0.12.2-7")
+(def +version+ "0.12.2-7-1-new-tags")
 (bootlaces! +version+)
 
 (task-options!
- pom  {:project     'precursorapp/react
+ pom  {:project     'precursor/react
        :version     +version+
        :description "React.js packaged up with Google Closure externs"
        :url         "http://facebook.github.io/react/"
@@ -19,7 +19,7 @@
 
 (deftask download-react []
   (download :url "https://github.com/PrecursorApp/react/releases/download/v0.12.2-new-tags/react-0.12.2-new-tags.zip"
-            :checksum "6aef36dd47019e1e21240b3333a19e4d"
+            :checksum "cd53c7c3d72752f6f87a3886efe55ccb"
             :unzip true))
 
 (deftask package []
